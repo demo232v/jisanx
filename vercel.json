@@ -3,14 +3,14 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/jisanx",
+      "dest": "/jisanx.js",
       "headers": {
         "Cache-Control": "no-cache"
       }
     },
     {
       "src": "/(.*)",
-      "dest": "/jisanx"
+      "dest": "/jisanx.js"
     }
   ]
 }
