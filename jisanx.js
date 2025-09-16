@@ -873,15 +873,7 @@
           if (depositButton && !depositButton.hasAttribute('jisanx-fullscreen-listener')) {
             // Mark the button to prevent adding multiple listeners
             depositButton.setAttribute('jisanx-fullscreen-listener', 'true');
-            
-            // Add fullscreen icon to the button
-            const svgElement = document.createElement('svg');
-            svgElement.className = 'jisanx-fullscreen-icon';
-            svgElement.style.width = '14px';
-            svgElement.style.height = '14px';
-            svgElement.style.marginLeft = '5px';
-            svgElement.innerHTML = '<path d="M4,4H20V20H4V4M6,8V18H18V8H6Z" />';
-            
+         
             // Add the fullscreen toggle functionality
             depositButton.addEventListener('click', function(event) {
               // Prevent the default action (opening deposit popup)
